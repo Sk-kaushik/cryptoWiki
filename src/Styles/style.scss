@@ -1,0 +1,93 @@
+@import "./sidebar.scss";
+@import "./home.scss";
+@import "./card.scss";
+@import "./newsCard.scss";
+@import "./cryptoDetail.scss";
+@import "./lineChart.scss";
+@import "./news.scss";
+@import "./exchange.scss";
+
+// FONTS
+@import "./fonts.scss";
+
+// RESPONSIVE
+@import "./responsive.scss";
+
+// RESET BROWSER STYLING
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  @media screen and (max-width: "480px") {
+    h2 {
+      font-size: 26px !important;
+      font-weight: 600 !important;
+    }
+  }
+}
+
+.layout {
+  max-width: 1500px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0 50px;
+  margin: 0 20px 0 300px;
+  overflow-x: hidden;
+
+  @media screen and (max-width: "1000px") {
+    margin: 0 20px 0 270px;
+  }
+  @media screen and (max-width: "780px") {
+    width: 100%;
+    margin: 20px;
+    padding: 80px 0 0 0;
+  }
+}
+
+.mt5 {
+  margin-top: 50px;
+}
+
+// LOADER
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-55%, -50%);
+}
+
+.page-container {
+  padding: 40px 0;
+}
+.no-data {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: "1250px") {
+    left: 60%;
+  }
+  @media screen and (max-width: "780px") {
+    left: 50%;
+  }
+}
+
+#sider {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  z-index: 99 !important;
+  @media screen and (max-width: "780px") {
+    height: 70px;
+    right: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.ant-col {
+  z-index: 0 !important;
+}

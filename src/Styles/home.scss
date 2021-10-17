@@ -1,0 +1,25 @@
+.home-container {
+  z-index: -1 !important;
+  .ant-statistic {
+    margin-top: 20px;
+    .ant-statistic-title {
+      font-size: 18px;
+    }
+    .ant-statistic-content {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+.category-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+.home-component-container {
+  margin-top: 30px;
+}

@@ -1,0 +1,25 @@
+.exchange-title {
+  display: flex;
+  .ant-avatar {
+    margin: 0 3px 0 10px !important;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  margin-left: -10px;
+}
+.accordion-change {
+  padding-left: 20px;
+}
+.accordion-market {
+  padding-left: 15px;
+}
+
+.accordion-volume {
+  padding-left: 10px;
+}
+
+.accordion-exchange-heading {
+  padding-left: 10px;
+}

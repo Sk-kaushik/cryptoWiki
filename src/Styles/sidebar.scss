@@ -1,0 +1,69 @@
+.ant-layout-sider-children {
+  position: relative;
+}
+
+.sidebar-container {
+  position: relative;
+  .logo {
+    height: 55px;
+    padding-top: 20px;
+    margin-left: 17px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    a {
+      margin-left: 10px;
+      color: white;
+    }
+  }
+  @media screen and (max-width: "780px") {
+    position: absolute !important;
+    top: 0;
+    width: 100vw;
+    background: #001529;
+    height: 70px;
+    .logo {
+      margin-bottom: 0;
+    }
+  }
+}
+.menu-icon {
+  font-size: 16px !important;
+}
+.menu {
+  a {
+    font-size: 16px;
+  }
+  @media screen and (max-width: "780px") {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 100px;
+  }
+}
+
+.hideLink {
+  opacity: 0;
+}
+.menu-toggle-btn {
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  transition: 0.3s;
+  background: #001529;
+  color: white;
+  border: 0;
+  &:hover {
+    background: #001529;
+  }
+  &:focus {
+    background: #001529;
+    color: white;
+  }
+
+  &.active {
+    position: absolute;
+    right: -40px;
+    top: 60px;
+    color: white;
+  }
+}

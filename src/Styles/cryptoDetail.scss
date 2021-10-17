@@ -1,0 +1,72 @@
+.detail-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-weight: 700;
+    color: #0071bd;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.detail-stats {
+  h2 {
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.stats-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  &:hover {
+    background: white;
+  }
+  .stats-item-right {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.coin-detail-des {
+  display: flex;
+  justify-content: space-between !important;
+
+  font-size: 16px;
+  margin: auto;
+  font-weight: 500;
+  h3 {
+    margin-top: 40px;
+    color: #0071bd;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .stats-item {
+    width: auto;
+  }
+}
+
+.crypto-detail {
+  @media screen and (max-width: "780px") {
+    .ant-row {
+      display: block;
+    }
+  }
+}
