@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import PageLayout from "./Layout/PageLayout";
 
 // PAGES
-import { Home, Crypto, Exchange, News, CryptoDetail } from "./Pages";
+import { Home, Crypto, Exchange, News, CryptoDetail, NotFound } from "./Pages";
 
 const App = () => {
   return (
@@ -29,6 +29,10 @@ const App = () => {
 
           <Route path="/news">
             <News />
+          </Route>
+
+          <Route path="/*">
+            <NotFound />
           </Route>
         </Switch>
       </PageLayout>
