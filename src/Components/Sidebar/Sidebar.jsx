@@ -31,18 +31,18 @@ const Sidebar = ({ setToggleMenu, toggleMenu, checkWidth }) => {
 
       <div className="menu">
         <Menu theme="dark" defaultSelectedKeys={[window.location.pathname]} mode={!checkWidth() ? "inline" : "horizontal"} style={{ zIndex: "99999" }}>
-          <Menu.Item icon={<HomeOutlined className="menu-icon" />} key="/">
+          <Menu.Item icon={<HomeOutlined className="menu-icon" />} key={`/`}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item icon={<FundOutlined className="menu-icon" />} key="/crypto">
+          <Menu.Item icon={<FundOutlined className="menu-icon" />} key={`/crypto`}>
             <Link to="/crypto">Cryptocurrencies</Link>
           </Menu.Item>
 
-          <Menu.Item icon={<MoneyCollectOutlined className="menu-icon" />} key="/exchange">
+          <Menu.Item icon={<MoneyCollectOutlined className="menu-icon" />} key={`/exchange`}>
             <Link to="/exchange">Exchange</Link>
           </Menu.Item>
 
-          <Menu.Item icon={<BulbOutlined className="menu-icon" />} key="/news">
+          <Menu.Item icon={<BulbOutlined className="menu-icon" />} key={`/news`}>
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>
